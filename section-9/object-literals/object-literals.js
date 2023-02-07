@@ -38,7 +38,7 @@ console.log(restaurant.openingHours?.mon?.open);
 const days = [...weekdays];
 
 for (const day of days) {
-  const open = restaurant.openingHours[day]?.open ?? 'closed';
+  const open = restaurant.openingHours[day]?.open ?? "closed";
   console.log(
     `On ${day}, ${(open && `we open at: ${open}`) || `we're closed`}`
   );
